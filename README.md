@@ -1,2 +1,2 @@
-# modxevo-sypexgeo
-modx evolution module for sypexgeo geolocation
+# Плагин SypexGeo для MODX Evolution
+Плагин определяет город пользователя по ip-адресу с помощью api SypexGeo, используя локальную базу и удаленный сервер.
