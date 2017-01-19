@@ -79,7 +79,7 @@
 					$result = [ 
 						'city'   => isset( $cookie['city'] ) && is_numeric( $cookie['city'] ) ? intval( $cookie['city'] ) : 0, 
 						'region' => isset( $cookie['region'] ) && is_numeric( $cookie['region'] ) ? intval( $cookie['region'] ) : 0, 
-						'manual' => true,
+						'manual' => !empty( $cookie['manual'] ),
 					];
 
 					return $result;
