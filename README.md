@@ -75,7 +75,7 @@ CREATE TABLE IF NOT EXISTS `sxgeo_regions` (
 ?>
   
 // чанк locations-row:
-<li><a href="?city=[+city_id+]">[+city+]</a></li>
+<li><a href="?city=[+city_id+]">[+city_name+]</a></li>
   
 // чанк locations-wrap:
 <ul>[+wrap+]</ul>
