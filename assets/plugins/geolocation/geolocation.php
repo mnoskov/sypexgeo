@@ -132,7 +132,7 @@
 		}
 
 		public function getRecords() {
-			$query = $this->modx->db->query( "SELECT r.name_ru AS region_name, r.timezone, c.name_ru AS city_name, c.lat, c.lon, '$location[manual]' AS manual, l.* FROM " . $this->modx->getFullTableName( 'locations' ) . " l JOIN `sxgeo_cities` c ON c.id = l.city_id JOIN `sxgeo_regions` r ON r.id = l.city_id ORDER BY r.name_ru, c.name_ru" );
+			$query = $this->modx->db->query( "SELECT r.name_ru AS region_name, r.timezone, c.name_ru AS city_name, c.lat, c.lon, l.* FROM " . $this->modx->getFullTableName( 'locations' ) . " l JOIN `sxgeo_cities` c ON c.id = l.city_id JOIN `sxgeo_regions` r ON r.id = l.region_id ORDER BY r.name_ru, c.name_ru" );
 
 			return $this->modx->db->makeArray( $query );
 		}
