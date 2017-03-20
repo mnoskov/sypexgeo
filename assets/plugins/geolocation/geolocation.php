@@ -28,7 +28,7 @@
 		}
 
 		private function setcookie( $data ) {
-			setcookie( $this->cookie, base64_encode( json_encode( $data ) ), time() + 2592000 );
+			setcookie( $this->cookie, base64_encode( json_encode( $data ) ), time() + 2592000, '/' );
 		}
 
 		private function fallback() {
